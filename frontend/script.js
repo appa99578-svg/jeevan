@@ -2,7 +2,10 @@
 "use strict";
 const KEY_NAME="jarvis_key";
 const MEMORY_NAME="jarvis_memory";
-const MODELS=["gemini-2.5-flash","gemini-2.5-flash-lite"];
+const MODELS = [
+  "gemini-3.5-flash",
+  "gemini-3.5-flash-lite"
+];
 const SYSTEM_INSTRUCTION=`You are J.A.R.V.I.S, a helpful personal AI assistant. Follow the user's requested language. If the user says Telugu, reply in Telugu Unicode. If the user asks English, reply in English. If the user uses Telugu-English or Roman Telugu, reply in simple Telugu-English/Roman Telugu as appropriate. Never change the requested language unless the user asks. Keep answers clear and practical. Do not read or discuss formatting markers merely because they appear around text; treat them as content only when the user explicitly asks about them.`;
 let API_KEY="";
 let MEMORY=loadMemory();
